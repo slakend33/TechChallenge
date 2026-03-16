@@ -16,12 +16,12 @@ Production-grade Azure infrastructure deployed via Terraform. Provisions a multi
                         │  │  app     │  mgmt    │   backend    │     │
                         │  │ /24      │  /24     │   /24        │     │
                         │  └──────────┴──────────┴──────────────┘     │
-                        │         ┌────────────────────┐              │
-                        │         │     web  /24        │             │
-                        │         │  ┌──────┐ ┌──────┐  │             │
-                        │         │  │vm-web│ │vm-web│  │             │
-                        │         │  │  01  │ │  02  │  │             │
-                        │         │  └──┬───┘ └───┬──┘  │             │
+                        │         ┌──────────────────────┐            │
+                        │         │     web  /24         │            │
+                        │         │  ┌──────┐ ┌──────┐   │            │
+                        │         │  │vm-web│ │vm-web│   │            │
+                        │         │  │  01  │ │  02  │   │            │
+                        │         │  └──┬───┘ └───┬──┘   │            │
                         │         │  LB frontend  │      │            │
                         │         │  10.0.4.10    │      │            │
                         │         └───────────────┴──────┘            │
@@ -31,8 +31,8 @@ Production-grade Azure infrastructure deployed via Terraform. Provisions a multi
                         │   └─────────────┘  │  SSH keys stored   │   │
                         │                    └────────────────────┘   │
                         │   ┌─────────────────────────────────────┐   │
-                        │   │  Storage: cfcinfraprod001            │  │
-                        │   │  (management subnet only, via SE)    │  │
+                        │   │  Storage: cfcinfraprod001           │   │
+                        │   │  (management subnet only, via SE)   │   │
                         │   └─────────────────────────────────────┘   │
                         └─────────────────────────────────────────────┘
 ```
