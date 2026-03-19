@@ -205,5 +205,7 @@ terraform plan -destroy   # preview
 terraform destroy         # confirm with 'yes'
 ```
 
-> **Note:** Key Vault enters a soft-delete state for 90 days after destruction. If you redeploy with the same `key_vault_name`, Terraform will recover the existing vault automatically. If you want a clean slate, purge it first: `az keyvault purge --name cfc-prod-001`# CoalfireTechChallenge
+> **Note:** Key Vault enters a soft-delete state for 90 days after destruction. If you redeploy with the same `key_vault_name`, Terraform will recover the existing vault automatically. If you want a clean slate, purge it first: `az keyvault purge --name cfc-prod-001`# TechChallenge
 Code repository for tech challenge
+
+
